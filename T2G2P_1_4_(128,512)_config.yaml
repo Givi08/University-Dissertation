@@ -1,12 +1,12 @@
 data:
-  dev: ./sign_data/inverse/valid
+  dev: "./Data/tmp/dev" #./sign_data/inverse/valid
   files: files
   max_sent_length: 80
   skip_frames: 2
   src: gloss
-  src_vocab: ./sign_data/gloss_vocab.txt
-  test: ./sign_data/inverse/test
-  train: ./sign_data/inverse/train
+  src_vocab: "./Configs/src_vocab.txt"  #./sign_data/gloss_vocab.txt
+  test: "./Data/tmp/test" #./sign_data/inverse/test
+  train: "./Data/tmp/train" #./sign_data/inverse/train
   trg: skels
 model:
   bias_initializer: zeros
@@ -51,7 +51,7 @@ training:
   logging_freq: 250
   loss: mse
   max_output_length: 300
-  model_dir: ./Models/T2G2P_1_4_(128, 512)
+  model_dir: ./Models/T2G2P_1_4_(128, 512)/ParameterSharedTransformerEncoder-cycle
   optimizer: adam
   overwrite: true
   patience: 7

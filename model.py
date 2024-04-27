@@ -356,7 +356,7 @@ def build_model(cfg: dict = None,
         activation=cfg["encoder"].get("activation", "relu"),
         num_unique_layers=3,  
         num_total_layers=6,    
-        mode="sequence",      
+        mode="cycle",      
         norm=False)
 
     
