@@ -20,3 +20,7 @@ pytest
 datasets
 packaging
 plotly
+debugpy
+scipy
+opencv-python
+numba
